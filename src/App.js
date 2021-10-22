@@ -1,7 +1,7 @@
 import './App.css';
 
 // Component Files
-import PriceContainer from "./components/PriceContainer";
+import PriceTable from './components/PriceTable.js';
 
 function App() {
   return (
