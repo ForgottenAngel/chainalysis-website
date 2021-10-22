@@ -2,21 +2,19 @@ import './App.css';
 
 // Component Files
 import PriceTable from './components/PriceTable.js';
+import Recommendation from './components/Recommendation.js';
 
 function App() {
   return (
     <div className='App'>
       <h1 className = 'site-title'>BTC vs. ETH Price Comparison</h1>
-      <PriceContainer/>
+      <div className='price-container'>
+        <PriceTable id='left-table' exchange='Gemini' />
+        <PriceTable id='right-table' exchange='Coinbase' />
+      </div>
       <p className='recommendation-header'>Recommendations</p>
-      <div className='recommendations'>
-        <p>You should buy BTC from NAME.</p>
-        <p>You should sell BTC with NAME.</p>
-      </div>
-      <div className='recommendations'>
-        <p>You should buy ETH from NAME.</p>
-        <p>You should sell ETH with NAME.</p>
-      </div>
+      <Recommendation currency='BTC' />
+      <Recommendation currency='ETH' />
     </div>
   );
 }
