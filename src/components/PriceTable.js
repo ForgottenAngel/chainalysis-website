@@ -1,5 +1,5 @@
 import React from "react";
-var priceFetch = require('./PriceRetriever.js');
+import retrievePrice from './PriceRetriever.js';
 
 class PriceTable extends React.Component {
     constructor(props) {
@@ -27,10 +27,10 @@ class PriceTable extends React.Component {
 
     async tick() {
 
-        let BTCBuyPrice = await priceFetch.retrievePrice("BTC", this.props.exchange, 'Buy');
-        let BTCSellPrice = await priceFetch.retrievePrice("BTC", this.props.exchange, 'Sell');
-        let ETHBuyPrice = await priceFetch.retrievePrice("ETH", this.props.exchange, 'Buy');
-        let ETHSellPrice = await priceFetch.retrievePrice("ETH", this.props.exchange, 'Sell');
+        let BTCBuyPrice = await retrievePrice("BTC", this.props.exchange, 'Buy');
+        let BTCSellPrice = await retrievePrice("BTC", this.props.exchange, 'Sell');
+        let ETHBuyPrice = await retrievePrice("ETH", this.props.exchange, 'Buy');
+        let ETHSellPrice = await retrievePrice("ETH", this.props.exchange, 'Sell');
 
         this.setState({
             BTC_buy: BTCBuyPrice,

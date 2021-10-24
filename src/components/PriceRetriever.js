@@ -1,5 +1,5 @@
 // Function to retrieve prices.
-exports.retrievePrice = async function(currency, exchange, action) {
+export default async function retrievePrice(currency, exchange, action) {
 
     let urlDict = {
         // Gemini API Links
@@ -55,4 +55,4 @@ async function fetchPrice(url, action) {
             console.log('Invalid action passed. Use \'Buy\' or \'Sell\'')
             return 0;
     }
-} 
+}

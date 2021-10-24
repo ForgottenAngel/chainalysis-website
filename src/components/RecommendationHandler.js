@@ -1,5 +1,5 @@
 // Function to retrieve recommendation.
-exports.getRecommendation = function(currency, action) {
+export default function getRecommendation(currency, action) {
 
     // Form class name from arguments
     let classVal = String(currency) + '-' + String(action) + '-val';

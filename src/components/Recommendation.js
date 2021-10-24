@@ -1,5 +1,5 @@
 import React from "react";
-var recHandler = require('./RecommendationHandler.js');
+import getRecommendation from './RecommendationHandler.js';
 
 class Recommendation extends React.Component {
     constructor(props) {
@@ -23,8 +23,8 @@ class Recommendation extends React.Component {
 
     tick() {
 
-        let buy_exchange = recHandler.getRecommendation(this.props.currency, 'Buy');
-        let sell_exchange = recHandler.getRecommendation(this.props.currency, 'Sell');
+        let buy_exchange = getRecommendation(this.props.currency, 'Buy');
+        let sell_exchange = getRecommendation(this.props.currency, 'Sell');
 
         this.setState({
             rec_buy_exchange: buy_exchange,
