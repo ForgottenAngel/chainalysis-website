@@ -5,8 +5,8 @@ class Recommendation extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            rec_buy_exchange: 'NULL',
-            rec_sell_exchange: 'NULL2'
+            rec_buy_exchange: 'LOADING',
+            rec_sell_exchange: 'LOADING'
         } 
     }
 
