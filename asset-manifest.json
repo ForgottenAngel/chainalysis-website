@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/chainalysis-website/static/css/main.2af2bbaa.chunk.css",
+    "main.js": "/chainalysis-website/static/js/main.9aee4afa.chunk.js",
+    "main.js.map": "/chainalysis-website/static/js/main.9aee4afa.chunk.js.map",
+    "runtime-main.js": "/chainalysis-website/static/js/runtime-main.238caaa4.js",
+    "runtime-main.js.map": "/chainalysis-website/static/js/runtime-main.238caaa4.js.map",
+    "static/js/2.5d5506fd.chunk.js": "/chainalysis-website/static/js/2.5d5506fd.chunk.js",
+    "static/js/2.5d5506fd.chunk.js.map": "/chainalysis-website/static/js/2.5d5506fd.chunk.js.map",
+    "index.html": "/chainalysis-website/index.html",
+    "static/css/main.2af2bbaa.chunk.css.map": "/chainalysis-website/static/css/main.2af2bbaa.chunk.css.map",
+    "static/js/2.5d5506fd.chunk.js.LICENSE.txt": "/chainalysis-website/static/js/2.5d5506fd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.238caaa4.js",
+    "static/js/2.5d5506fd.chunk.js",
+    "static/css/main.2af2bbaa.chunk.css",
+    "static/js/main.9aee4afa.chunk.js"
+  ]
+}
